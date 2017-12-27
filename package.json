@@ -3,6 +3,10 @@
   "description": "Gatsby default starter",
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "www-jes-dav-pet",
+  "description": "Personal website of Jesse David Peterson",
+  "version": "0.0.0",
+  "author": "Jesse David Peterson <@jesdavpet>",
   "dependencies": {
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.32",
@@ -12,6 +16,8 @@
     "gatsby"
   ],
   "license": "MIT",
+  "keywords": [],
+  "license": "Written and graphic content copyright Jesse David Peterson, 2017",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
