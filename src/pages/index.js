@@ -10,7 +10,7 @@ const footerStyle = { paddingTop: `20vh`, minHeight: `50vh` }
 
 const IndexPage = () => (
   <main style={mainContainerStyle} className="container-fluid row">
-    <header style={headerStyle} className="col-12 col-md-6">
+    <header style={headerStyle} className="col-12 col-sm-8 col-md-6">
       <Logo />
     </header>
 
