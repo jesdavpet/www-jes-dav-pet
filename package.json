@@ -12,6 +12,7 @@
     "gatsby": "^1.9.145",
     "gatsby-cli": "^1.1.28",
     "gatsby-link": "^1.6.32",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.26",
