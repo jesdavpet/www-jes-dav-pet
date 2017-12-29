@@ -13,7 +13,7 @@ const TemplateWrapper = ({children}) => (
       meta={[
         { name: `description`, content: `Hi, I'm Jesse David Peterson (@jesdavpet), a software developer from Canada.` },
         { name: `keywords`, content: `JavaScript, React, Node, Angualr, jQuery, Java, Clojure, ClojureScript, Functional Programming, DevOps, SQL, PostgreSQL, OSS, Open Source Software, Progressive Web Applications` },
-        { name: `theme-color`, content: `#173D4C` }
+        { name: `theme-color`, content: `#002938` }
       ]}
     />
 
