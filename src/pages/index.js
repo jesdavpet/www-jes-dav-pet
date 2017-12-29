@@ -1,13 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Logo from '../components/Logo'
+import SocialAccounts from '../components/SocialAccounts'
+
+const mainContainerStyle = { minHeight: `100vh` }
+const headerStyle = { paddingTop: `10vh`, paddingLeft: `10vw`, minHeight: `40vh` }
+const footerStyle = { paddingTop: `20vh`, minHeight: `50vh` }
+
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  <main style={mainContainerStyle} className="container-fluid row">
+    <header style={headerStyle} className="col-12 col-md-6">
+      <Logo />
+    </header>
+
+    <footer style={footerStyle} className="col-12">
+      <SocialAccounts />
+    </footer>
+  </main>
 )
 
 export default IndexPage

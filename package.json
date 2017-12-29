@@ -1,24 +1,22 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "name": "www-jes-dav-pet",
   "description": "Personal website of Jesse David Peterson",
   "version": "0.0.0",
   "author": "Jesse David Peterson <@jesdavpet>",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.0",
+    "@fortawesome/fontawesome-free-brands": "^5.0.2",
+    "@fortawesome/fontawesome-free-solid": "^5.0.2",
+    "@fortawesome/react-fontawesome": "0.0.17",
+    "bootstrap": "^4.0.0-beta.2",
     "gatsby": "^1.9.145",
+    "gatsby-cli": "^1.1.28",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-cli": "^1.1.28",
     "gatsby-source-filesystem": "^1.5.11",
-    "gatsby-transformer-remark": "^1.7.26"
+    "gatsby-transformer-remark": "^1.7.26",
+    "reactstrap": "^5.0.0-alpha.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "keywords": [],
   "license": "Written and graphic content copyright Jesse David Peterson, 2017",
   "main": "n/a",
