@@ -8,7 +8,7 @@
     "@fortawesome/fontawesome-free-brands": "^5.0.2",
     "@fortawesome/fontawesome-free-solid": "^5.0.2",
     "@fortawesome/react-fontawesome": "0.0.17",
-    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap": "^4.0.0-beta.3",
     "gatsby": "^1.9.145",
     "gatsby-cli": "^1.1.28",
     "gatsby-link": "^1.6.32",

@@ -2,4 +2,5 @@
 body {
   background: url('../img/nebula.min.jpg') no-repeat fixed center;
   background-size: cover;
+  color: #ffffff !important;
 }

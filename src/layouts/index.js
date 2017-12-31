@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
 const TemplateWrapper = ({children}) => (
@@ -17,7 +16,9 @@ const TemplateWrapper = ({children}) => (
       ]}
     />
 
-    <div>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" />
+
+    <div className="container-fluid">
       {children()}
     </div>
   </div>

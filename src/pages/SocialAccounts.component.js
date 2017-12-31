@@ -1,7 +1,7 @@
 import React from 'react'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
-import SocialLink from './SocialLink'
+import SocialLink from './SocialLink.component'
 import socialLinks from '../data/socialLinks'
 
 class SocialAccounts extends React.Component {
