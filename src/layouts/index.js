@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import './index.css'
 
-const TemplateWrapper = ({children}) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="@jesdavpet"
