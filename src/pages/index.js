@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import Logo from './Logo.component'
 import SocialAccounts from './SocialAccounts.component'
