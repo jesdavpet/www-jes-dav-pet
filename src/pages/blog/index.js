@@ -4,6 +4,10 @@ import Link from 'gatsby-link'
 import ArticleSummary from './ArticleSummary.component'
 
 const IndexPage = ({ data }) => {
+  const NO_ARTICLES = <div>NO ARTICLES !!!</div>
+
+  if (!data) return NO_ARTICLES
+
   const { edges = [] } = data.allMarkdownRemark
   const articles = edges
     .map(({ node: article }) => article)
@@ -15,7 +19,7 @@ const IndexPage = ({ data }) => {
         {articles.map((article, i) =>
           <ArticleSummary key={`article-summary-${i}`} article={article} />)}
       </div>
-    : <div>NO ARTICLES !!!</div>
+    : NO_ARTICLES
 }
 
 export const query = graphql`
