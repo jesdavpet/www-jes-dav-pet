@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { pipe } from 'ramda'
 
 import AllTags from './AllTags.component'
 import ArticleSummary from './ArticleSummary.component'
@@ -28,7 +29,7 @@ const IndexPage = ({ articles = [], tags = [] }) => {
   </div>
 }
 
-const Index = extract => results => IndexPage(extract(results))
+const Index = pipe(extractQueryResults, IndexPage)
 
 export const query = graphql`
   query IndexQuery {
@@ -50,4 +51,4 @@ export const query = graphql`
   }
 `
 
-export default Index(extractQueryResults)
+export default Index

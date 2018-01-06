@@ -16,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.26",
+    "ramda": "^0.25.0",
     "reactstrap": "^5.0.0-alpha.4"
   },
   "keywords": [],
