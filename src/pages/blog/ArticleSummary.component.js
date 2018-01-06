@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Tag from './Tag.component'
 
 class ArticleSummary extends React.Component {
   render () {
@@ -14,16 +15,7 @@ class ArticleSummary extends React.Component {
 
       <dd>
         <div>{summary}</div>
-        {tags
-          ? <div>
-              {tags.map((tag, i) => (
-                <span key={`tag-${date}-${i}`} className="badge badge-light">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          : ``
-        }
+        {tags.map((tag, i) => <Tag key={`tag-${date}-${i}`} tag={tag} />)}
       </dd>
     </dl>
   }
