@@ -1,26 +1,34 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import AllTags from './AllTags.component'
 import ArticleSummary from './ArticleSummary.component'
 
-const IndexPage = ({ data }) => {
-  const NO_ARTICLES = <div>NO ARTICLES !!!</div>
-
-  if (!data) return NO_ARTICLES
-
+const extractQueryResults = ({ data }) => {
   const { edges = [] } = data.allMarkdownRemark
+
   const articles = edges
     .map(({ node: article }) => article)
     .filter(article => !!article)
-  const hasArticles = articles.length > 0
 
-  return hasArticles
-    ? <div>
-        {articles.map((article, i) =>
-          <ArticleSummary key={`article-summary-${i}`} article={article} />)}
-      </div>
-    : NO_ARTICLES
+  const tags = articles
+    .reduce((t, a) => t.concat(a.frontmatter.tags), [])
+    .reduce((t, a) => t.includes(a) ? t : t.concat(a), [])
+
+  return { articles, tags }
 }
+
+const IndexPage = ({ articles = [], tags = [] }) => {
+  const NO_ARTICLES = <div>NO ARTICLES !!!</div>
+
+  return <div>
+    <AllTags tags={tags} />
+    {articles.map((article, i) =>
+      <ArticleSummary key={`article-summary-${i}`} article={article} />)}
+  </div>
+}
+
+const Index = extract => results => IndexPage(extract(results))
 
 export const query = graphql`
   query IndexQuery {
@@ -42,4 +50,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default Index(extractQueryResults)
