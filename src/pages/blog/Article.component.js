@@ -16,19 +16,4 @@ const Article = ({ data, location }) => {
   </div>
 }
 
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: {path: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        date
-        path
-        tags
-        summary
-      }
-    }
-  }
-`
-
 export default Article

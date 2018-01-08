@@ -1,5 +1,6 @@
 const path = require('path')
-const pathToArticle = path.resolve('./src/pages/blog/Article.js')
+
+const pathToArticle = path.resolve('./src/pages/blog/Article.component.js')
 
 const createArticlesFromMarkdown = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
